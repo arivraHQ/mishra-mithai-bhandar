@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FFF8EC;
+  --color-surface: #FBE9C6;
+  --color-text: #2A1A12;
+  --color-primary: #8C1C13;
+  --color-accent: #E8A317;
+  --color-green: #2F5D3A;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mukta), sans-serif;
+}
+
+body {
+  background-color: #FFF8EC;
+  color: #2A1A12;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Heritage Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8A317;
+  border-radius: 999px;
+  border: 2px solid #FFF8EC;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C1C13;
+}
+
+/* Indian Arch Crop Mask */
+.arch-mask {
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Subtle Rangoli / Jali Background Pattern */
+.bg-jali-pattern {
+  background-color: #FFF8EC;
+  background-image: radial-gradient(#8C1C13 0.65px, transparent 0.65px), radial-gradient(#E8A317 0.65px, #FFF8EC 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+  background-opacity: 0.04;
+}
+
+/* Touch Target Minimum Enforcement (strictly without overriding display) */
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Reduce Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Offscreen Content Optimization */
+.section-deferred {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 650px;
+}
