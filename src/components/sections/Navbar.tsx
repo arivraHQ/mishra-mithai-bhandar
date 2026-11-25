@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { useCart } from "../cart/CartContext";
 import { SITE_CONTENT } from "@content/site";
 import { ShoppingBag, Menu, X, Phone, Clock } from "lucide-react";
@@ -53,9 +54,16 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         {/* Brand Wordmark */}
         <a href="#" className="flex items-center gap-2.5 sm:gap-3 group">
-          {/* Traditional Brass / Kumkum Emblemed Monogram */}
-          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-primary to-primary-hover border-2 border-accent/40 flex items-center justify-center text-bg shadow-sm flex-shrink-0">
-            <span className="font-heading text-lg sm:text-xl text-accent font-bold">म</span>
+          {/* Traditional Brass / Kumkum Emblem */}
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-accent/50 shadow-sm flex-shrink-0 bg-[#8C1C13]">
+            <Image
+              src="/images/mishra-emblem.png"
+              alt="Mishra Mithai Bhandar emblem"
+              width={48}
+              height={48}
+              priority
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-heading text-lg sm:text-2xl text-primary font-bold tracking-tight leading-tight group-hover:text-primary-hover transition-colors whitespace-nowrap">

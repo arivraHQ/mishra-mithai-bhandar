@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { SITE_CONTENT } from "@content/site";
 import { useCart } from "../cart/CartContext";
 import { VegBadge } from "../common/VegBadge";
@@ -33,8 +34,14 @@ export const Footer: React.FC = () => {
           {/* Brand Identity (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-bg text-primary font-heading text-xl font-bold flex items-center justify-center border-2 border-accent">
-                म
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent/60 shrink-0 bg-[#8C1C13]">
+                <Image
+                  src="/images/mishra-emblem.png"
+                  alt="Mishra Mithai Bhandar emblem"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="font-heading text-xl text-bg font-bold block">
@@ -126,8 +133,30 @@ export const Footer: React.FC = () => {
             <span className="text-accent flex items-center gap-1 font-medium">
               Made for Kanpur <Heart className="w-3 h-3 fill-accent" />
             </span>
-            <span>•</span>
-            <span>Portfolio Concept Studio Piece</span>
+          </div>
+        </div>
+
+        {/* Portfolio & Showcase Disclaimer + Arivra Design Labs Attribution */}
+        <div className="mt-8 pt-6 border-t border-bg/15 text-center space-y-3">
+          <p className="text-[11px] text-bg/75 max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-accent">Notice &amp; Disclaimer:</strong> This website is an interactive concept application engineered solely for portfolio demonstration and showcase purposes. Mishra Mithai Bhandar is a fictional entity. All contact details, telephone numbers, FSSAI license identifiers, and customer reviews are simulated dummy data. Please do not contact these numbers for real sweet orders or bulk catering bookings.
+          </p>
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-bg/10 border border-accent/35 text-xs text-bg">
+            <span className="font-semibold tracking-wider uppercase text-[10px] text-accent">
+              ARIVRA Demo
+            </span>
+            <span className="text-bg/40">•</span>
+            <span className="text-bg/85">
+              A product by{" "}
+              <a
+                href="https://arivra.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-bg hover:text-accent underline underline-offset-4 transition-colors"
+              >
+                Arivra Design Labs
+              </a>
+            </span>
           </div>
         </div>
       </div>

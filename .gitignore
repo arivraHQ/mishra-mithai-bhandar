@@ -36,7 +36,17 @@ yarn-error.log*
 AGENTS.md
 .agents/
 governance/
+GEMINI.md
 *gemini*
+*gemini*.md
+.gemini/
+*.agent*
+lighthouse*.json
+.ag-kit-backups/
+graphify-out/
+.codex/
+__pycache__/
+*.pyc
 
 # vercel
 .vercel

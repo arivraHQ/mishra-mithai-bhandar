@@ -1,5 +1,12 @@
 # Mishra Mithai Bhandar (मिश्रा मिठाई भंडार) — Kanpur, Est. 1985
 
+> [!WARNING]
+> **⚠️ DEMO & SHOWCASE DISCLAIMER**  
+> This project is a fictional concept application developed strictly for **portfolio demonstration and technical showcase purposes**.  
+> - **Mishra Mithai Bhandar** is a simulated Indian confectionery storefront entity.  
+> - All telephone numbers, FSSAI registration strings, physical store addresses, pricing, and customer reviews are **dummy/illustrative data**.  
+> - **DO NOT attempt to call these telephone numbers or visit this address for real confectionery orders or catering enquiries.**
+
 > **Boutique Agency Showcase:** A bespoke direct-to-consumer digital storefront and luxury portfolio piece created for an artisanal Indian confectionery and savories institution in Kanpur, Uttar Pradesh.
 
 Designed and engineered from scratch with authentic Devanagari editorial typography, a high-contrast heritage color token system, asymmetric layouts, and a zero-friction client-side **Direct-to-WhatsApp** commerce engine.
@@ -150,4 +157,5 @@ npm start
 
 ## 📄 License & Attribution
 
-Designed and developed as an agency portfolio piece. All confectionery and branding assets are curated from public cultural records and licensed open photography.
+**ARIVRA Demo** — A product by [Arivra Design Labs](https://arivra.com/).  
+Licensed under the [MIT License](LICENSE).
